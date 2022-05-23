@@ -1,0 +1,167 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.navigation
+{
+  font-family: var(--font1);
+  /* height:74px; */
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 23px;
+
+}
+.nav-left
+{
+  font-size: 35px;
+  display: flex;
+}
+.nav-left span
+{
+    font-size: 35px;
+}
+
+.nav-left ul li
+{
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font1);
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li :hover {
+   color: var(main-bg-color);
+   font-weight: bold;
+  }
+.nav-left ul 
+{ 
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 18px;
+}
+.nav-left ul a
+{ 
+    text-decoration: none;
+    color: black;
+}
+.nav-left ul a:hover
+{ 
+    color: var(--main-bg-color);
+}
+
+.content
+{
+    /* height: 399px; */
+    height: 100%;
+    /* background-color: #7a7ada; */
+    display: flex;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+    font-family: font1;
+    font-size: 20px;
+    /* background-color: antiquewhite; */
+}
+.content::after
+{
+    content: "";
+    background-image: url('../img/investing.jpg');
+    position: absolute;
+    width: 96%;
+    height: inherit;
+    opacity: 0.25;
+    /* object-fit: contain; */
+    margin-left: 20px;
+}
+
+.content-left
+{
+    font-family: vae(--font1);
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 352px;
+}
+
+.content-right
+{
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-right img
+{
+    height: 300px;
+    /* border: 2px solid black; */
+    border-radius: 300px;
+}
+
+.home-articles
+{
+ /* height: 455px; */
+ padding-top: 23px;
+ /* background-color: rgb(231, 200, 200, 0.5); */
+ padding: 18px;
+ background-color: antiquewhite;
+}
+.home-article
+{
+    margin: 20px;
+    display: flex;
+
+}
+
+
+.footer
+{
+ height: 45px;
+ background-color: var( --main-bg-color);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: rgb(1, 1, 1);
+ flex-direction: column;
+ /* --main-bg-color:brown; */
+ 
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+}
+
+.home-article
+{
+    display: flex;
+
+}
+.home-article-img img
+{
+    width: 265px;
+    margin: 4px;
+    margin-right: 6px;
+    
+}
+
+.home-article-content
+{
+    align-self: center;
+    padding: 25px;
+}
+.home-article-content a
+{
+    text-decoration: none;
+    /* color: var(--main-bg-color); */
+    color: black;
+}

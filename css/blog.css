@@ -1,0 +1,22 @@
+.post-img
+{
+    height: 450px;
+    overflow: hidden;
+    
+}
+.post-img img
+{
+    width: 100;
+}
+.blog-post-content
+{
+    /* background-color: aqua; */
+}
+.blog-post-content h1
+{
+    text-align: center;
+}
+.blog-post-content div
+{
+    font-size: 25px;
+}

@@ -1,0 +1,286 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body
+{
+    background: linear-gradient(#193136,#7597de);
+    /* background: linear-gradient(#2b1055,#7597de); */
+    min-height: 100vh;
+    overflow-x: hidden;
+    
+
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 35px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+div #log
+{
+    height: 25%;
+    width: 25%;
+    border-radius: 85px;
+}
+
+#header .navlist
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+header ul li a:hover
+{
+    background-color: rgb(230, 239, 239);
+    color: #2b1055;
+}
+
+#active
+{
+    background-color: rgb(230, 239, 239);
+    color: #2b1055;
+}
+section
+{
+    position: relative;
+    width:100%;
+    height:100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::after
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#1c0522,transparent);
+  z-index: 1000;
+}
+section img
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+ section img#chart
+{
+    mix-blend-mode:color;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+section img#moon
+{
+    display: flex;
+    justify-content: left;
+    height: 20%;
+    width: 20%;
+    margin-left: 50%;
+    margin-top: 10px;
+    
+} 
+
+#text
+{
+    color: white;
+    position: absolute;
+    white-space: nowrap;
+    font-size: 4.5vw;
+    /* margin-left: 100px; */
+    z-index: 9;
+    
+    justify-content: center;
+}
+#btn
+{
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: black;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+     align-items: center;
+}
+
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec1 h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p
+{
+    font-size: 1em;
+    
+    color: #fff; 
+}
+
+.sec1
+{
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(#2b1055,#193136);
+    
+    
+}
+
+.sec1 p 
+{
+    font-size: 1em;
+    
+    color: #fff; 
+}
+.sec::after
+{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#2b1055,transparent);
+  z-index: 1000;
+}
+div .heading
+{
+    color: #e71111;
+    display: flex;
+    text-align: center;
+}
+#name
+{
+    color: #fff;
+}
+
+@media(max-width:1406px)
+{
+    #header .navlist
+    {
+        display: none;
+           
+    }
+    #header .navlist.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background: #193136;
+    }
+    #header .navlist li
+    {
+        margin-left: 0;
+    }
+    #header .navlist li a
+    {
+        font-size:1.5em;
+        margin: 5px 0;
+        display: inline-block;
+        border-radius: 30px;
+        
+    }
+    section img#chart
+    {
+        display: none;
+        
+    }
+    section img#moon
+   {
+       display: none;
+       
+   }
+    .toggle
+    {
+      position:relative;
+      
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      background:url("../img/menu.png");
+      background-size: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1000;
+    }
+    .toggle.active
+    {
+        background: url("../img/close.png");
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    section #btn
+    {
+        font-size: 15px;
+    }
+    .sec
+    {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+}
