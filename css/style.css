@@ -127,10 +127,11 @@ section img#moon
     color: white;
     position: absolute;
     white-space: nowrap;
-    font-size: 4.5vw;
+    font-size: 3vw;
     /* margin-left: 100px; */
     z-index: 9;
-    
+    margin-top: 39px;
+    font-style: italic;
     justify-content: center;
 }
 #btn
@@ -144,7 +145,11 @@ section img#moon
     z-index: 9;
     transform: translateY(100px);
 }
-
+#btn:hover{
+    /* background-color: aqua; */
+    color: white;
+    background-color: #1c0522;
+}
 .sec
 {
     position: relative;
