@@ -7,7 +7,8 @@
 }
 body
 {
-    background: linear-gradient(#193136,#7597de);
+/*     background: linear-gradient(#193136,#7597de); */
+        background: linear-gradient(#112023,#5d82ce);
     /* background: linear-gradient(#2b1055,#7597de); */
     min-height: 100vh;
     overflow-x: hidden;
