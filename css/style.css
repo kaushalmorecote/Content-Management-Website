@@ -125,7 +125,8 @@ section img#moon
 #text
 {
     color: white;
-     border-radius: 12px;
+    background-color: #334b5f;
+    border-radius: 12px;
     position: absolute;
     white-space: nowrap;
     font-size: 3vw;
